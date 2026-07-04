@@ -1,7 +1,7 @@
 // --- Global Configurations ---
 const CONFIG = {
     password: "2907", // Your custom passcode entry
-    letterText: "Happy Birthday, Mahii! 💖\n\nI don't think words will ever be enough to explain what you mean to me, but today I'll still try. You walked into my life so quietly, yet somehow changed everything so loudly. Since you came into my world, even ordinary days feel softer, happier, and more meaningful. You make everything beautiful! ✨"
+    letterText: "Happy Birthday, Sumaiya! 💖\n\nI don't think words will ever be enough to explain what you mean to me, but today I'll still try. You walked into my life so quietly, yet somehow changed everything so loudly. Since you came into my world, even ordinary days feel softer, happier, and more meaningful. You make everything beautiful! ✨"
 };
 
 let poppedCount = 0;
