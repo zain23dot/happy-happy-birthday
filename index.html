@@ -22,7 +22,7 @@
     <!-- STAGE 0: THE PASSCODE GATE -->
     <div id="stage0" class="stage active-stage">
         <div class="glass-card text-center entry-card">
-            <div class="lock-icon">🔒</div>
+            <div class="lock-icon" style="font-size: 2rem; margin-bottom: 10px;">🔒</div>
             <h2>A Secret Awaits</h2>
             <p>Enter your special 4-digit code</p>
             <input type="password" id="passwordInput" placeholder="••••" maxlength="4">
@@ -66,7 +66,7 @@
                 <div class="balloon b-green" onclick="popBalloon(this, 'my')">🎈</div>
                 <div class="balloon b-purple" onclick="popBalloon(this, 'everything ✨')">🎈</div>
             </div>
-            <div id="revealMessage" class="reveal-msg-box text-pop-up"></div>
+            <div id="revealMessage" class="reveal-msg-box"></div>
             <button id="balloonNextBtn" onclick="nextStage(4)" class="btn-primary reveal-btn" style="display: none;">Next Surprise ➡️</button>
         </div>
     </div>
@@ -80,10 +80,11 @@
                 <div class="candle-stick"></div>
                 <div class="cake-base">🎂</div>
             </div>
+            <br>
             <button id="blowBtn" onclick="blowCandle()" class="btn-primary pulse-anim">💨 Tap to Blow</button>
             
             <div id="wishText" class="wish-reveal" style="display: none;">
-                <h1 class="cursive-text zoom-in-text">Close your eyes & make a wish...</h1>
+                <h1 class="cursive-text">Close your eyes & make a wish...</h1>
                 <button onclick="nextStage(5)" class="btn-primary pop-hover" style="margin-top: 25px;">I've Made My Wish 🤫</button>
             </div>
         </div>
@@ -92,9 +93,9 @@
     <!-- STAGE 5: THE ROSE BOUQUET REVEAL -->
     <div id="stage5" class="stage">
         <div class="glass-card text-center bouquet-card">
-            <h2 class="section-title modern-fade">Your Rose Bouquet 🌹</h2>
-            <div class="bouquet-wrapper">
-                <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?q=80&w=300" alt="Rose Bouquet" class="bouquet-img spin-in">
+            <h2 class="section-title">Your Rose Bouquet 🌹</h2>
+            <div class="image-frame">
+                <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?q=80&w=300" alt="Rose Bouquet" class="bouquet-img">
             </div>
             <p class="sparkle-text">Freshly picked virtual flowers for you!</p>
             <button onclick="nextStage(6)" class="btn-primary pop-hover" style="margin-top: 20px;">Open My Letter 💌</button>
@@ -119,7 +120,6 @@
 
             <!-- Typing Paper Sheet -->
             <div id="paperLetter" class="letter-sheet" style="display: none;">
-                <div class="heart-badge floating-item">💝</div>
                 <div id="typewriterTarget" class="letter-text"></div>
                 <div class="text-center">
                     <button id="letterNextBtn" onclick="nextStage(7)" class="btn-primary reveal-btn" style="display: none; margin-top: 25px;">One last thing... 🎁</button>
@@ -132,18 +132,23 @@
     <div id="stage7" class="stage">
         <div class="glass-card text-center final-card">
             <h2 id="finalTitle" class="section-title">One Last Thing...</h2>
-            <p id="finalSub" class="small-text tracking-in">Tap the gift to unwrap your final surprise</p>
+            <p id="finalSub" class="small-text">Tap the gift to unwrap your final surprise</p>
             
             <div id="giftBox" class="gift-box-wrapper" onclick="openFinalGift()">
-                <div class="gift-lid"></div>
                 <div class="gift-body">🎁</div>
             </div>
 
             <div id="finalContent" style="display: none;">
                 <div class="avatar-container">
-                    <img src="summu.png" alt="Celebrate" class="polaroid-img bounce-in">
+                    <img src="summu.png" alt="Celebrate" class="polaroid-img">
                 </div>
                 <h2 class="title-text rainbow-text" style="margin-top: 15px;">Lots of love for you! 🥰</h2>
                 <p class="closing-quote">"In all the world, there is no heart for me like yours."</p>
                 <button onclick="restartExperience()" class="btn-secondary pop-hover">🔄 Replay Experience</button>
             </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
